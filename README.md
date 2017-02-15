@@ -2,4 +2,6 @@ This is training repository
 
 List details
 - Introduction
-- ABC
+- MVC
+- Controller
+- Directive
