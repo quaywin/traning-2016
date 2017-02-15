@@ -5,3 +5,4 @@ List details
 - MVC
 - Controller
 - Directive
+- thanhkhoi95
