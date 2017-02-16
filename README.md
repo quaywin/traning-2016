@@ -6,6 +6,8 @@ List details
 - Controller
 - Directive
 - thanhkhoi95
+- abc
 
 Group 2
 - Tran The
+- Tran Huyen
