@@ -6,3 +6,6 @@ List details
 - Controller
 - Directive
 - thanhkhoi95
+
+Group 2
+- Tran The
