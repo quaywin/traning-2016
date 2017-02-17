@@ -1,0 +1,375 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+    z-index: 1;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #bdc3c7;
+}
+
+input:focus{
+    outline: none;
+}
+
+/*Chat app biggest container div*/
+
+body > div{
+    width: 100%;
+    height: 100%;
+    background: url("ocean-night-wallpaper-wide.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+/*Userlist*/
+
+#list{
+    position: relative;
+    display: inline-block;
+    height: 520px;
+    width: 218px;
+    border-right: 1px solid #d6d6d6;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background: #ebebeb;
+    left: 5px;
+    margin-top: 80px;
+    z-index: 1;
+}
+
+#div-search{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+}
+
+#div-search img{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    width: 12px;
+    height: 12px;
+}
+
+#div-search input{
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    width: 161px;
+    height: 32px;
+    border: 1px solid #d1d1d1;
+    border-radius: 7px;
+    padding-left: 34px;
+    padding-top: 3px;
+}
+
+#user-list{
+    position: absolute;
+    width: calc(100% - 6px);
+    height: 460px;
+    top: 60px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#user-list li{
+    position: relative;
+    list-style: none;
+    text-align: left;
+    height: 49px;
+    margin-bottom: 5px;
+}
+
+.list-avatar{
+    width: 42px;
+    height: 42px;
+    border-radius: 7px;
+    margin-left: 11px;
+}
+
+.username{
+    position: absolute;
+    font-size: 13px;
+    left: 66px;
+    top: 15px;
+    width: 138px;
+    color: #7f8c8d;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.status-outer{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ebebeb;
+    z-index: 1;
+    top: 31px;
+    left: 42px;
+}
+
+.status-inner{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #2ecc71;
+    top: 2px;
+    left: 2px;
+}
+
+#gradientback{
+    position: absolute;
+    width: calc(100% - 15px);
+    height: 80px;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(247,247,247,0.7));
+    border-bottom-left-radius: 7px;
+}
+
+/*Chatbox*/
+
+#chat-box{
+    position: relative;
+    display: inline-block;
+    height: 520px;
+    width: 503px;
+    background: white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    left: -1px;
+}
+
+#cb-header{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 69px;
+    top: 0;
+    left: 0;
+}
+
+#reciever{
+    height: 40px;
+    width: 50%;
+    font-size: 13px;
+    color: #cccccc;
+    text-align: left;
+    margin-top: 28px;
+    margin-left: 20px;
+}
+
+#reciever-name{
+    position: absolute;
+    font-size: 13px;
+    color: #adadad;
+    top: 28px;
+    left: 41px;
+}
+
+#video-call{
+    position: absolute;
+    display: inline-block;
+    height: 69px;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+#video-call input{
+    position: absolute;
+    width: 97px;
+    height: 36px;
+    border-radius: 7px;
+    border: 1px solid #dbdbdb;
+    background: transparent;
+    font-size: 12px;
+    color: #bdc3c7;
+    padding-left: 34px;
+    right: 0;
+    z-index: 1;
+}
+
+#video-call img{
+    position: absolute;
+    top: 12px;
+    right: 68px;
+    z-index: 0;
+}
+
+#video-call input:hover{
+    cursor: pointer;
+}
+
+#cb-input{
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    bottom: 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+#cb-input input{
+    position: absolute;
+    width: 415px;
+    height: 38px;
+    top: 12px;
+    left: 11px;
+    border: 1px solid #dbdbdb;
+    border-radius: 7px;
+    padding-left: 12px;
+    background: transparent;
+    font-style: italic;
+}
+
+#send-btn{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 17px;
+    right: 18px;
+}
+
+#send-btn:hover{
+    cursor: pointer;
+}
+
+#attach-btn{
+    position: absolute;
+    top: 27px;
+    right: 81px;
+    z-index: 1;
+}
+
+#attach-btn:hover{
+    cursor: pointer;
+}
+
+#cb-messages{
+    position: absolute;
+    width: 100%;
+    height: 387px;
+    top: 69px;
+}
+
+#message-list{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#message-list li{
+    list-style: none;
+}
+
+.left-message, .right-message{
+    min-height: 90px;
+}
+
+.cb-m-avatar{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin-top: 1px;
+    border-radius: 7px;
+}
+
+.message-text{
+    position: relative;
+    text-align: left;
+    width: 253px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    margin-left: 116px;
+    font-size: 16px;
+    border-radius: 7px;
+    color: white;
+}
+
+.tr-container{
+    position: absolute;
+    max-height: 38px;
+    height: calc(50% + 6px);
+    width: 0;
+    top: 0;
+}
+
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    bottom: 0;
+}
+
+.left-message .cb-m-avatar{
+    left: 15px;
+}
+
+.left-message .message-text{
+    background: #bdc3c7;
+}
+
+.left-message .tr-container{
+    left: -10px;
+}
+
+.left-message .triangle{
+    border-right: 10px solid #bdc3c7;
+}
+
+.right-message .cb-m-avatar{
+    right: 15px;
+}
+
+.right-message .message-text{
+    background: #2ecc71;
+}
+
+.right-message .tr-container{
+    right: 0;
+}
+
+.right-message .triangle{
+    border-left: 10px solid #2ecc71;
+}
+
+#typing{
+    height: 25px;
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: #c2c2c2;
+}
