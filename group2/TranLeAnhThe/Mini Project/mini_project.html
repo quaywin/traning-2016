@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Create CV</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <link href="mystyle.css" rel="stylesheet" type="text/css" />
+    <script src="script_jquery.js"></script>
+ 
+</head>
+
+<body>
+    <div id="navbar">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <button class="btn btn-warning navbar-btn navbar-right" id="create">Create</button>
+                <button class="btn btn-warning navbar-btn navbar-right" id="back">Back</button>
+            </div>
+            <!-- End Container-->
+        </nav>
+        <!-- End navbar -->
+    </div>
+    <div id="form-cv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                        <div id="sidebar">
+                            <ul>
+                                <li><a class="item" href="#contactinfo">Contact Info</a></li>
+                                <li><a class="item" href="#objective">Objective</a></li>
+                                <li><a class="item" href="#education">Education</a></li>
+                                <li><a class="item" href="#experience">Experience</a></li>
+                                <li><a class="item" href="#skills">Skills</a></li>
+                                <li><a class="item" href="#aboutme">About Me</a></li>
+                            </ul>
+                        </div>
+                </div>
+
+                <div class="col-md-9">
+                    <main id="main">
+                        <div id="contactinfo">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>Contact Info</h3>
+                                </div>
+                                <div class="col-md-9">
+                                    <form id="form-contact-name">
+                                        <input class="input input-lg form-control" type="text" name="yourname" id="yourname" placeholder="Your Name">
+                                    </form>
+
+
+                                    <div class="col-md-6">
+                                        <form id="form-contact-info">
+                                        <div class="form-group">
+                                            <input class="input form-control" type="text" name="street" id="street" size="10" placeholder="Street">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="input form-control" type="text" name="area" id="area" size="31" placeholder="Area">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="input form-control" type="text" name="city" id="city" size="31" placeholder="City">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="input form-control" type="text" name="zipcode" id="zipcode" size="31" placeholder="Zip Code">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="input form-control" type="text" name="phone" id="phone" size="31" placeholder="Phone">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="input form-control" type="text" name="email" id="email" size="31" placeholder="Email">
+                                        </div>
+                                    </form>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- End contact info-->
+
+                        <div id="objective">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>Objective</h3>
+                                </div>
+                                <div class="col-md-9">
+                                    <form id="form-objective">
+                                        <textarea class="form-control" name="objective" id="des-objective" rows="10" placeholder="More description"></textarea>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--End objective-->
+
+                        <div id="education">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>Education</h3>
+                                </div>
+                                <div class="col-md-9" id="content-education">
+                                    <div id="edu0">
+                                        <form class="form-education" id="form-education0">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <input class="input form-control school" type="text" name="school" id="school0" size="31" placeholder="School">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="input form-control location" type="text" name="location" id="locaion-ed0" size="31" placeholder="Location">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="input form-control major" type="text" name="major" id="major0" size="31" placeholder="Major">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="input form-control degree" type="text" name="degree" id="degree0" size="31" placeholder="Degree">
+                                                </div>
+                                            </div>
+
+
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <label>From </label>
+                                                </div>
+                                                <div class="col-md-11">
+                                                    <input type="text" class="datepicker datepicker-ed-from" id="datefrom-ed0" name="datefrom" size="28" placeholder="click to chose date">
+                                                </div>
+                                                <br>
+                                                <div class="col-md-1">
+                                                    <label>To </label>
+                                                </div>
+                                                <div class="col-md-11">
+                                                    <input type="text" class="datepicker datepicker-ed-to" id="dateto-ed0" name="dateto" size="28" value="Present" placeholder="Present">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="description-education">
+                                                <textarea class="form-control" name="
+                                            description-education" rows="6" id="des-education0" placeholder="More description"></textarea>
+                                            </div>
+
+                                            <button class="btn btn-primary btn-add">Add More</button>
+                                            <button class="btn btn-warning remove-field" id="remove-field0">Remove</button>
+                                        </form>
+                                    </div>
+                                    <!--End edu0-->
+                                </div>
+                                <!--end col-md-9 -->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end education-->
+                        <hr>
+                        <!--End education-->
+
+                        <div id="experience">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>Experience</h3>
+                                </div>
+                                <div class="col-md-9" id="content-experience">
+                                    <div id="ex0">
+                                        <form class="form-experience" id="form-experience0">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <input class="input form-control company" type="text" name="company" id="company0" size="31" placeholder="Company">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="input form-control company-website" type="text" name="company-website" id="company-website0" size="31" placeholder="Company website">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="input form-control job-title" type="text" name="job-title" size="31" id="job-title0" placeholder="Job title">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="input form-control location-ex" type="text" name="location" size="31" id="location-ex0" placeholder="Location">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <label>From </label>
+                                                </div>
+                                                <div class="col-md-11">
+                                                    <input type="text" class="datepicker datepicker-ex-from" id="datefrom-ex0" name="datefrom" size="28" placeholder="click to chose date">
+                                                </div>
+                                                <br>
+                                                <div class="col-md-1">
+                                                    <label>To </label>
+                                                </div>
+                                                <div class="col-md-11">
+                                                    <input type="text" class="datepicker datepicker-ex-to" id="dateto-ex0" name="dateto" size="28" value="Present" placeholder="Present">
+
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="description-experience">
+                                                <textarea class="form-control description-experience" name="description-experience" id="des-experience0" rows="6" placeholder="More description"></textarea>
+                                            </div>
+                                        </form>
+
+
+                                        <button class="btn btn-primary btn-add-ex">Add More</button>
+                                        <button class="btn btn-warning remove-field-ex" id="remove-field-ex0">Remove</button>
+                                    </div>
+                                    <!--End ex0 -->
+                                </div>
+                                <!--End content experience-->
+                            </div>
+                            <!-- End row-->
+                        </div>
+                        <!--End experience-->
+                        <hr>
+
+
+
+                        <div id="skills">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>Skills</h3>
+                                </div>
+                                <div class="col-md-9" id="content-skill">
+                                    <div id="skill0">
+                                        <form class="form-skill" id="form-skill0">
+                                            <div class="row">
+                                            <div class="col-md-6">
+                                                <input class="input form-control skill-name" type="text" name="skill-name" id="skill-name0" size="20" placeholder="Skill Name">
+                                            </div>
+                                        </div>
+                                        <textarea class="form-control skill-des" id="skill-des0" name="skills" rows="10" placeholder="More description"></textarea>
+                                        </form>
+                                        
+                                        <button class="btn btn-primary btn-add-skill">Add More</button>
+                                        <button class="btn btn-warning remove-field-skill" id="remove-field-skill0">Remove</button>
+                                    </div>
+                                    <!--End skill0-->
+                                    </des-objective>
+                                    <!--End content-skill -->
+                                </div>
+                                <!--End row-->
+                            </div>
+                            <!--End skills-->
+                            <hr>
+
+
+                            <div id="about-me">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h3>About me</h3>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <form id="form-about-me">
+                                             <textarea class="form-control" id="about-me-des" name="description-aboutme" rows="10" placeholder="More description"></textarea>
+                                        </form>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!--End adwards-->
+
+                    </main>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="view-cv" class="container">
+            <div id="header-view-cv">
+
+                <div class="row">
+                    <div class="col-md-3" id="photo">
+                        <img src="" id="img-url" class="img-circle" alt="" width="150" height="150">
+                        <input type="file" id="img-file">
+                    </div>
+
+                    <div class="col-md-5" id="view-contact-info">
+                        <h3 class="need-strong" id="name-cv"></h3>
+                        <h5 id="phone-cv"></h5>
+                        <h5 id="email-cv"></h5>
+                    </div>
+
+                    <div class="col-md-4" id="view-address">
+                        <h5 id="street-cv"></h5>
+                        <h5 id="area-cv"></h5>
+                        <h5 id="city-cv"></h5>
+                        <h5 id="zipcode-cv"></h5>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div id="content-cv">
+
+                <div id="objective-cv">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4 class="need-strong">Objective</h4>
+                        </div>
+
+                        <div class="col-md-9">
+                            <h5 id="des-objective-cv"></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="education-cv">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4 class="need-strong">Education</h4>
+                        </div>
+
+                        <div class="col-md-9" id="content-cv-education">
+                            <div id="edu-cv0" class="view-cv-left">
+                                <h5 class="need-strong school-cv" id="school-cv0"> </h5>
+                                <h5 class="need-strong date-from-ed-cv" id="date-from-ed-cv0"></h5>
+                                <h5 class="need-strong date-to-ed-cv" id="date-to-ed-cv0"></h5>
+                                <h5 class="need-strong major-cv" id="major-cv0"></h5>
+                                <h5 class="need-strong degree-cv" id="degree-cv0"></h5>
+                                <h5 class="des-education-cv" id="des-education-cv0"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="experence-cv">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4 class="need-strong">Experence</h4>
+                        </div>
+
+                        <div class="col-md-9" id="content-cv-experience">
+                            <div id="ex-cv0" class="view-cv-left">
+                                <h5 class="need-strong company-cv" id="company-cv0"> </h5>
+                                <h5 class="need-strong date-from-ex-cv" id="date-from-ex-cv0"></h5>
+                                <h5 class="need-strong date-to-ex-cv" id="date-to-ex-cv0"></h5>
+                                <h5 class="company-website-cv" id="company-website-cv0"></h5>
+                                <h5 class="job-title-cv" id="job-title-cv0"></h5>
+                                <h5 class="location-ex-cv" id="location-ex-cv0"></h5>
+                                <h5 class="des-experience-cv" id="des-experience-cv0"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="skills-cv">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4 class="need-strong">Skills</h4>
+                        </div>
+
+                        <div class="col-md-9" id="content-cv-skill">
+                            <div id="skill-cv0">
+                                <h5 class="skill-name-cv" id="skill-name-cv0"></h5>
+                                <h5 id="skill-des-cv0"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="about-me-cv">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4 class="need-strong">About Me</h4>
+                        </div>
+
+                        <div class="col-md-9">
+                            <h5 id="about-me-des-cv"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
