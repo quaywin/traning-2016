@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="./js/form.js"></script>
+<head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Huycongxe.com</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#personal">Personal</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#list-hobbies">Hobbies</a></li>
+        <li><a href="#others">Others</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="logout"><span class="glyphicon glyphicon-log-out logout"></span> Reset</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <form id="signupForm" method="post" class="form-horizontal" action="project.html" style="margin-top:100px;">
+    <h2 class="text-center" id="personal">Personal</h2>
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="name">Full Name</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name..." />
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="nameS">Chose your avatar</label>
+      <div class="col-sm-5">
+        <input type="file" id="avatar" name="avatar" accept="image/*" style="margin:8px">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="birthday">Birthday</label>
+      <div class="col-sm-5">
+        <input type="date" class="form-control" id="birthday" name="birthday"/>
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="relationship">Relationship</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="relationship" name="relationship" placeholder="relationship...." />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="nationality">Nationality</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="nationality" name="nationality" placeholder="nationality...." />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="languages">Languages</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="languages" name="languages" placeholder="languages...." />
+      </div>
+    </div>
+    <hr>
+    <h2 class="text-center" id="contact">Contact</h2>
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="email">Email</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="phone">Phone</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="(+84)000 000 000" />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="website">Website</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="website" name="website" placeholder="http://....." />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="facebook">Facebook</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="facebook" name="facebook" placeholder="http://facebook.com/....." />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="github">Github</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="github" name="github" placeholder="http://github.com/....." />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-sm-4 control-label" for="twitter">Twitter</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="twitter" name="twitter" placeholder="http://twitter.com/....." />
+      </div>
+    </div>
+    <hr>
+    <div class="skills">
+
+
+    <h2 class="text-center" id="skills">Skills</h2>
+    <div class="form-group skill1" id="skill1">
+      <label class="col-sm-4 control-label" for="nameS">Name</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="nameS" name="nameS"/>
+          <input type="file" id="hinhanh" name="pic" accept="image/*" style="margin:10px">
+      </div>
+      <label class="col-sm-4 control-label" for="percent">Percent</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="percent" name="percent"/>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9 col-sm-offset-4">
+    <button type="button" name="button" id="add" class="btn btn-default">Add Skill</button>
+  </div>
+    <div class="list-hobbies">
+
+    <h2 class="text-center" id="list-hobbies">Hobbies</h2>
+    <div class="form-group" id="hobbies1">
+      <label class="col-sm-4 control-label" for="nameS">Chose your hobbie</label>
+      <div class="col-sm-5">
+          <input type="file" id="hobbies" name="pic" accept="image/*" style="margin:8px">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9 col-sm-offset-4">
+    <button type="button" name="button" id="add-hobbies" class="btn btn-default">Add Hobbies</button>
+  </div>
+  <div class="list-other">
+    <h2 class="text-center" id="others">Other</h2>
+    <div class="form-group other1" id="other1">
+      <label class="col-sm-4 control-label" for="nameO">Name</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="nameO" name="nameO"/>
+      </div>
+      <label class="col-sm-4 control-label" for="percentO">Percent</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="percentO" name="percentO"/>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9 col-sm-offset-4">
+    <button type="button" name="button" id="add-others" class="btn btn-default">Add Others</button>
+  </div>
+  <div class="timeline">
+    <h2 class="text-center" id="timeline">Timeline</h2>
+    <div class="form-group" id="timeline1">
+      <label class="col-sm-4 control-label" for="time-title">Title</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="time-title" name="time-title"/>
+      </div>
+      <label class="col-sm-4 control-label" for="time-time">Time</label>
+      <div class="col-sm-5">
+        <input type="date" class="form-control" id="time-start" name="times"/>
+        <input type="date" class="form-control" id="time-end" name="timee"/>
+      </div>
+      <label class="col-sm-4 control-label" for="time-body">Content</label>
+      <div class="col-sm-5">
+        <textarea class="form-control" id="time-body" row="4" col="50" name="time-body"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9 col-sm-offset-4">
+    <button type="button" name="button" id="add-timeline" class="btn btn-default">Add Timelines</button>
+  </div>
+  <hr>
+  <hr>
+  <hr>
+    <div class="form-group">
+      <div class="col-sm-9 col-sm-offset-6">
+        <button type="submit" class="btn btn-primary" name="create" value="Create CV" id="create" onclick="process()">Create CV</button>
+      </div>
+    </div>
+  </form>
+
+<!-- <script src="./js/form.js"></script> -->
+<script src="jquery-3.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+ <script type="text/javascript">
+   $(document).ready(function(){
+         $("#signupForm").validate({
+       rules: {
+         name: "required",
+         avatar:"required",
+         relationship: "required",
+         nationality: "required",
+         languages: "required",
+         birthday: "required",
+         pic:"required",
+         phone: {
+           required: true,
+           number: true,
+           maxlength:11
+         },
+         website: {
+           required: true,
+           url: true
+         },
+         facebook: {
+           required: true,
+           url: true
+         },
+         github: {
+           required: true,
+           url: true
+         },
+         twitter: {
+           required: true,
+           url: true
+         },
+         nameS: {
+           required: true,
+           minlength: 2,
+         },
+         percent: {
+           required: true,
+           number:true,
+           max:100
+         }
+       },
+       messages: {
+         firstname: "Please enter your firstname",
+         lastname: "Please enter your lastname",
+         username: {
+           required: "Please enter a username",
+           minlength: "Your username must consist of at least 2 characters"
+         },
+         password: {
+           required: "Please provide a password",
+           minlength: "Your password must be at least 5 characters long"
+         },
+         email: "Please enter a valid email address",
+       }
+     })
+   })
+ </script>
+
+</body>
