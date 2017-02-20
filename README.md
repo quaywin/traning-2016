@@ -1,19 +1,3 @@
 This is training repository
 
-List details
-- Introduction
-- MVC
-- Controller
-- Directive
-- thanhkhoi95
-- abc
-
-
-
-Group 2
-- Tran The
-- Tran Thi Huyen
-- huycongxe
-- thientamnguyen
-- Le Nguyen
-NodeJs
+Please upload your project to strickly path: [group-name]/[your-full-name]/[trainer-name]
