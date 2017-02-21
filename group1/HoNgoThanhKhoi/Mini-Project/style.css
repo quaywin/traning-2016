@@ -1,0 +1,320 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #EEEEEE;    
+}
+
+textarea {
+    resize: none;
+    margin-top: 20px !important;
+}
+
+button {
+    margin-top: 20px !important;
+}
+
+#create-btn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+#reload-btn {
+    position: fixed;
+    right: 150px;
+    top: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+    z-index: 1;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #bdc3c7;
+}
+
+li {
+    list-style: none;
+}
+
+#cv-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #EEEEEE;
+}
+
+.progress{
+    width: 90%;
+}
+
+#sidebar { 
+    background: #FFFFFF;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+}
+
+#sidebar header {
+    background-color: #1E1E1E;
+    padding-top: 20px;
+    color: #FFFFFF;
+    box-shadow: 1px 0px 5px 3px rgba(80, 80, 80, 0.83);
+    padding-bottom: 20px;
+    height: 50%;
+    z-index: 1;
+}
+
+.avatar {
+    background: url(images/avatar.jpg) no-repeat; 
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 0.349px 4.988px 115.2px 12.8px rgba(130, 130, 130, 0.33);
+}
+
+#fullname-sidebar {
+    text-align: center;
+}
+
+#job-sidebar {
+    text-align: center;
+    font-size: 17px;
+}
+
+#skills {
+    overflow-y: scroll;
+    height: 50%;
+    box-shadow: 0 3px 3px 3px rgba(82, 81, 81, 0.33);
+} 
+
+#skills h3{
+    padding-left: 15px;
+}
+
+#skills ul{
+    padding-left: 30px;
+    padding-top: 7px;
+}
+
+#skills li{
+    padding-left: 0px;
+}
+
+#cv-container > header{
+    left: 25%;
+    height: 27%;
+    width: 75%;
+    border-bottom: solid 1px #baaaaa;
+    background-color: #FFFFFF;
+    box-shadow: 3px 0px 4px 2px rgba(82, 81, 81, 0.33);
+    position: fixed;
+    z-index: 0;
+}
+
+#aboutme-text{
+    width: 95%;
+    word-break: normal;
+}
+
+#cv-container > header div{
+    display: inline-block;
+    padding-left: 50px;
+    padding-top: 10px;
+    height: 85%;
+    margin-top: 10px;
+    color: #baaaaa;
+}
+
+#cv-container > header div h3{
+    margin: 0;
+    color: #0A73BC;
+}
+
+#contact {
+    width: 34.5%;
+    border-right: dotted 1px #0A73BC;
+}
+
+#contact-list {
+    padding: 0;
+    margin-top: 15px;
+    font-size: 1vw;
+}
+
+
+#about {
+    width: 64.5%;
+    float: right;
+}
+
+#about p{
+    margin-top: 15px;
+    font-size: 1vw;
+}
+
+#info-container{
+    position: absolute;
+    width: 75%;
+    height: 73%;
+    left: 25%;
+    top: 27%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 30px;
+}
+
+#info-container section{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    height: 700px;
+    box-shadow: 2px 2px 3px 1px rgba(82, 81, 81, 0.33);
+}
+
+.header-image {
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.header-image img{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    z-index: 0;
+}
+
+.header-image p{
+    position: absolute;
+    z-index: 1;
+    color: #FFFFFF;
+    top: 30px;
+    left: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#info-container .details{
+    position: absolute;
+    width: 90%;
+    height: 250px;
+}
+
+#personal-info .avatar{
+    position: relative;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    left: 40px;
+    box-shadow: 0.349px 4.988px 115.2px 12.8px rgba(82, 82, 82, 0.33);
+}
+
+#personal-info .details > h4{
+    position: relative;
+    font-weight: bold;
+    top: -122px;
+    left: 200px;
+}
+
+#personal-info .details > p{
+    position: relative;
+    top: -132px;
+    left: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+#personal-info .info-list{
+    position: relative;
+    top: -60px;
+    left: 50px;
+    color: #666666;
+}
+
+#social-connect{
+    width: calc(100% - 174px);
+    height: 90px;  
+    margin-top: 250px;
+    margin-left: 88px;
+    margin-right: 13%;
+    border-top: 1px solid #baaaaa;
+    padding-top: 15px;
+}
+
+#education{
+    background-color: #191818 !important;
+    height: 600px !important;
+}
+
+#education .header-image{
+    height: 100px;
+}
+
+.edu-item{
+    color: #bdc3c7;
+    padding-top: 40px;
+    padding-left: 25px;
+}
+
+#hobbies {
+    height: 580px !important;
+}
+
+#hobbies .header-image p{
+    color: #191818;
+}
+
+#hob-info-list > p{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.my-error-class {
+    color:#FF0000;
+}
+
+#myModal input, #myModal select{
+    margin-top: 20px;
+}
+
+.line{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 0 !important;
+    border-bottom: 1px solid #baaaaa;
+}
+
+#aboutme{
+    margin-top:25px;
+}
+
+.rm-btn{
+    background-color: #FF0000 !important;
+}
+
+.add-btn{
+    background-color: green !important;
+}
