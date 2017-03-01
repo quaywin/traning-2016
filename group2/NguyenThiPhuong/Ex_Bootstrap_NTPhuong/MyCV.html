@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .bgimage {
+            background-image: url(anh.jpg);
+            background-size: 100%;
+        }
+        
+        .modal-header,
+        h4,
+        .close {
+            background-color: #5cb85c;
+            color: white !important;
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .footer {
+            padding-top: 61%;
+        }
+        
+        .modal-footer {
+            background-color: #f9f9f9;
+        }
+        
+        h1 {
+            color: black;
+            font-weight: bold;
+            font-size: 50px;
+            padding-top: 7%;
+        }
+        
+        .myBtn {
+            padding-left: 45%;
+        }
+    </style>
+    <SCRIPT LANGUAGE="JavaScript">
+                    <!--
+                        
+                        function processForm()
+                          {
+                                if (document.forms["form1"]["yourname"].value== "") {
+                                alert("Name must be filled out");
+                                 return false;
+                                 }
+                                if (document.forms["form1"]["school"].value== "") {
+                                alert("School must be filled out");
+                                 return false;
+                                 }
+                                  if (document.forms["form1"]["major"].value== "") {
+                                alert("Major must be filled out");
+                                 return false;
+                                  }
+                                if (document.forms["form1"]["email"].value== "" || document.forms["form1"]["phone"].value== "") {
+                                alert("Phone or Email must be filled out");
+                                 return false;
+                                  }
+
+                             
+                                disp=open("", "result")
+                               
+                                disp.document.write("<TITLE> Result Page </TITLE>"+"<PRE>")
+                            
+                               disp.document.write("<H2 ALIGN='CENTER' >"+form1.yourname.value+"<BR>")
+                               disp.document.write("<H4 ALIGN='CENTER' >"+form1.comment.value+"</H4>"+"<HR>"+"<BR><BR>")
+
+                                disp.document.write("<h3>"+ "\t\t\t\t\t APPLY FOR POSITION__________________________________"+"</h3>"+"<BR>")
+                                disp.document.write("\t\t\t\t\t\t\t "+form1.appposition.value+"<BR>") 
+                                disp.document.write("<h3>"+ "\t\t\t\t\t CONTACT INFO________________________________________"+"</h3>"+"<BR>")
+                                                 
+                               disp.document.write("\t\t\t\t\t\t\t Birthday  :"+form1.birthday.value+"<BR>") 
+                               if ($("#checkna").attr('checked')==true)            {
+                               disp.document.write("\t\t\t\t\t\t\t Gender    :Male"+"<BR>")
+                               }       
+                               else{ 
+                                   disp.document.write("\t\t\t\t\t\t\t Gender    :Female"+"<BR>")
+                               }  
+                                disp.document.write("\t\t\t\t\t\t\t "+form1.address.value+"<BR>") 
+                                disp.document.write("\t\t\t\t\t\t\t "+form1.city.value+"<BR>") 
+                               disp.document.write("\t\t\t\t\t\t\t Birth At   :"+form1.birthat.value+"<BR>") 
+                              disp.document.write("\t\t\t\t\t\t\t Phone      :"+form1.phone.value+"<BR>") 
+                               disp.document.write("\t\t\t\t\t\t\t Email      :"+form1.email.value+"<BR>")                             
+                               disp.document.write("\t\t\t\t\t\t\t "+form1.comment.value+"<BR>") 
+
+                               disp.document.write("<h3>"+ "\t\t\t\t\t EDUCATION____________________________________________"+"</h3>"+"<BR>")
+                               disp.document.write("\t\t\t\t\t\t\t School     :"+form1.school.value+"<BR>") 
+                                disp.document.write("\t\t\t\t\t\t\t Major      :"+form1.major.value+"<BR>") 
+                                disp.document.write("\t\t\t\t\t\t\t Location   :"+form1.location.value+"<BR>") 
+                                disp.document.write("\t\t\t\t\t\t\t From to    :"+form1.fromto.value+"<BR>")                    
+                              disp.document.write("\t\t\t\t\t\t\t Description:"+form1.comments.value+"<BR>")
+
+                               disp.document.write("<h3>"+ "\t\t\t\t\t EXPERIENCES_________________________________________"+"</h3>"+"<BR>")
+                               disp.document.write("\t\t\t\t\t\t\t Company    :"+form1.company.value+"<BR>") 
+                                disp.document.write("\t\t\t\t\t\t\t Location   :"+form1.location.value+"<BR>") 
+                                disp.document.write("\t\t\t\t\t\t\t From to    :"+form1.time.value+"<BR>") 
+                                disp.document.write("\t\t\t\t\t\t\t Work       :"+form1.work.value+"<BR>")              
+                                disp.document.write("\t\t\t\t\t\t\t Position   :"+form1.position.value+"<BR>")        
+                              disp.document.write("\t\t\t\t\t\t\t Description:"+form1.more.value+"<BR>")
+
+                              disp.document.write("<h3>"+ "\t\t\t\t\t OBJECTIVES________________________________________"+"</h3>"+"<BR>")           
+                              disp.document.write("\t\t\t\t\t\t\t "+form1.objectives.value+"<BR>")
+
+
+                              disp.document.write("<h3>"+ "\t\t\t\t\t SKILLS____________________________________________"+"</h3>"+"<BR>")           
+                              disp.document.write("\t\t\t\t\t\t\t "+form1.skills.value+"<BR>")
+
+                               disp.document.write("<PRE>")
+                     //-->
+                          }
+
+                        </SCRIPT>
+</head>
+
+<body>
+    <div class="bgimage">
+        <div class="container">
+            <h1 align="center">YOUR CV</h2>
+
+                <!-- Trigger the modal with a button -->
+                <div class="myBtn"> <button type="button" class="btn btn-default btn-lg" id="myBtn">CREATE</button></div>
+                <div class="footer">Design by PNT</div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header" style="padding:35px 20px;">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4><span class="glyphicon glyphicon-lock"></span> Your CV</h4>
+                            </div>
+                            <div class="modal-body" style="padding:40px 50px;">
+
+                                <form name="form1" onsubmit="return validateForm">
+                                    <h2>Apply for position</h2>
+                                    <p>
+                                        <input type="text" name="appposition" class="form-control" placeholder="Apply for position">
+                                    </p>
+                                    <h2>Contact Info</h2>
+
+                                    <p>
+                                        <input type="text" name="yourname" class="form-control" placeholder="Your name">
+                                    </p>
+                                    <p>
+                                        <input type="datetime" name="birthday" class="form-control" placeholder="Birthday">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="address" class="form-control" placeholder="Adddress">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="city" class="form-control" placeholder="City">
+                                    </p>
+                                    <div class="form-group">
+                                        <input type="text" name="birthat" class="form-control" placeholder="Birth at">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="phone" class="form-control" placeholder="Phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="comment" rows="4" cols="67" placeholder="Write something here"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" name="checkna" id="checke" checked="checked" onClick="LayGioiTinh()" value="Nam" />Nam
+                                        <input type="checkbox" name="checknu" value="Nu" onClick="LayGioiTinh()" />Nu
+                                    </div>
+
+
+                                    <h2>Education</h2>
+                                    <p>
+                                        <input type="text" name="school" class="form-control" placeholder="School">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="major" class="form-control" placeholder="Major">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="location" class="form-control" placeholder="Location">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="fromto" class="form-control" placeholder="From To">
+                                    </p>
+                                    <div class="form-group">
+                                        <textarea name="comments" rows="4" cols="67" placeholder="Enter your comments"></textarea>
+                                    </div>
+
+                                    <h2>Experiences</h2>
+
+                                    <div class="form-group">
+                                        <input type="text" name="company" class="form-control" placeholder="Company">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="location2" class="form-control" placeholder="Location">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="time" class="form-control" placeholder="From to">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="work" class="form-control" placeholder="Work">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="position" class="form-control" placeholder="Position">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="more" rows="4" cols="67" placeholder="More Description"></textarea>
+                                    </div>
+
+                                    <h2>Objective</h2>
+
+                                    <div class="form-group">
+                                        <textarea name="objectives" rows="4" cols="67" placeholder="Write something here"></textarea>
+                                    </div>
+
+                                    <h2>Skills</h2>
+
+                                    <div class="form-group">
+
+                                        <input type="text" name="skills" class="form-control" placeholder="Skills" id="skill">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="more2" rows="4" cols="67" placeholder="More Description"></textarea>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" class="btn btn-danger btn-default pull-left" data-dismiss="modal" value="Submit this form" onClick="processForm()">
+                                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+
+</body>
+
+</html>
