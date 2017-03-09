@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="market">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+</head>
+
+<body>
+    <ui-view></ui-view>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script type="text/javascript" src="market/market.module.js"></script>
+    <script type="text/javascript" src="market/market.route.js"></script>
+
+    <script type="text/javascript" src="market/components/market-home/market-home.module.js"></script>
+    <script type="text/javascript" src="market/components/market-home/market-home.route.js"></script>
+
+    <script type="text/javascript" src="market/components/market-main/market-main.module.js"></script>
+    <script type="text/javascript" src="market/components/market-main/market-main.controller.js"></script>
+    <script type="text/javascript" src="market/components/market-main/market-main.route.js"></script>
+
+    <script type="text/javascript" src="market/components/market-detail/market-detail.module.js"></script>
+    <script type="text/javascript" src="market/components/market-detail/market-detail.route.js"></script>
+    <script type="text/javascript" src="market/components/market-detail/market-detail.controller.js"></script>
+</body>
+
+</html>

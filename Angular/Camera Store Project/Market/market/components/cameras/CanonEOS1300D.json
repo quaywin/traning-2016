@@ -1,0 +1,15 @@
+{
+    "name": "Canon EOS 1300D",
+    "type": "DSLR",
+    "imgTitle": "market/components/cameras/img/CanonEOS1300D/CanonEOS1300D.jpg",
+    "imgThumb": "market/components/cameras/img/CanonEOS1300D/canon-eos-1300d-mini.png",
+    "linkDetail": "http://www.canon-europe.com/for_home/product_finder/cameras/digital_slr/eos_1300d/",
+    "images": [
+        "market/components/cameras/img/CanonEOS1300D/33829_pr42.jpg",
+        "market/components/cameras/img/CanonEOS1300D/33837_pr42.jpg",
+        "market/components/cameras/img/CanonEOS1300D/33838_pr42.jpg",
+        "market/components/cameras/img/CanonEOS1300D/33841_pr42.jpg",
+        "market/components/cameras/img/CanonEOS1300D/52245_pr42.jpg",
+        "market/components/cameras/img/CanonEOS1300D/52247_pr42.jpg"
+    ]
+}

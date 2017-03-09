@@ -1,0 +1,17 @@
+{
+    "name": "Canon EOS M10",
+    "type": "Mirrorless",
+    "imgTitle": "market/components/cameras/img/CanonEOSM10/CanonEOSM10.jpg",
+    "imgThumb": "market/components/cameras/img/CanonEOSM10/canon-m10-mini.png",
+    "linkDetail": "http://www.canon-europe.com/for_home/product_finder/cameras/digital_slr/eos_m10/",
+    "images": [
+        "market/components/cameras/img/CanonEOSM10/Gallery-sml_01orig.jpg",
+        "market/components/cameras/img/CanonEOSM10/Gallery-sml_02orig.jpg",
+        "market/components/cameras/img/CanonEOSM10/Gallery-sml_03orig.jpg",
+        "market/components/cameras/img/CanonEOSM10/Gallery-sml_08orig.jpg",
+        "market/components/cameras/img/CanonEOSM10/Gallery-sml_09orig.jpg",
+        "market/components/cameras/img/CanonEOSM10/Gallery-sml_12orig.jpg",
+        "market/components/cameras/img/CanonEOSM10/Gallery-lrg_01orig.jpg",
+        "market/components/cameras/img/CanonEOSM10/Gallery-lrg_03orig.jpg"
+    ]
+}

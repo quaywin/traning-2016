@@ -1,0 +1,15 @@
+{
+    "name": "Canon EOS 750D",
+    "type": "DSLR",
+    "imgTitle": "market/components/cameras/img/CanonEOS750D/CanonEOS750D.jpg",
+    "imgThumb": "market/components/cameras/img/CanonEOS750D/eos_750d-mini.png",
+    "linkDetail": "http://www.canon-europe.com/for_home/product_finder/cameras/digital_slr/eos_750d/",
+    "images": [
+        "market/components/cameras/img/CanonEOS750D/Gallery-sml_02orig.jpg",
+        "market/components/cameras/img/CanonEOS750D/Gallery-sml_03orig.jpg",
+        "market/components/cameras/img/CanonEOS750D/Gallery-sml_04orig.jpg",
+        "market/components/cameras/img/CanonEOS750D/Gallery-sml_06orig.jpg",
+        "market/components/cameras/img/CanonEOS750D/Gallery-sml_07orig.jpg",
+        "market/components/cameras/img/CanonEOS750D/Gallery-sml_10orig.jpg"
+    ]
+}

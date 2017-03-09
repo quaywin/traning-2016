@@ -1,0 +1,16 @@
+{
+    "name": "PowerShot G5 X",
+    "type": "Compact",
+    "imgTitle": "market/components/cameras/img/PowerShotG5X/PowerShotG5X.jpg",
+    "imgThumb": "market/components/cameras/img/PowerShotG5X/powershot-g5-x-mini.png",
+    "linkDetail": "http://www.canon-europe.com/for_home/product_finder/cameras/digital_camera/powershot/powershot_g5_x/",
+    "images": [
+        "market/components/cameras/img/PowerShotG5X/Gallery-sml_01orig.jpg",
+        "market/components/cameras/img/PowerShotG5X/Gallery-sml_02orig.jpg",
+        "market/components/cameras/img/PowerShotG5X/Gallery-sml_07orig.jpg",
+        "market/components/cameras/img/PowerShotG5X/Gallery-sml_09orig.jpg",
+        "market/components/cameras/img/PowerShotG5X/Gallery-sml_11orig.jpg",
+        "market/components/cameras/img/PowerShotG5X/Gallery-lrg_01orig.jpg",
+        "market/components/cameras/img/PowerShotG5X/Gallery-lrg_02orig.jpg"
+    ]
+}

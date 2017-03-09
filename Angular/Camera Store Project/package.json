@@ -1,0 +1,25 @@
+{
+  "name": "angularproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server ./Market -a localhost -p 8000 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tndk1995/MarketAngularProject.git"
+  },
+  "author": "Bi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tndk1995/MarketAngularProject/issues"
+  },
+  "homepage": "https://github.com/tndk1995/MarketAngularProject#readme"
+}

@@ -1,0 +1,30 @@
+<div class="detailHeader">
+    <div class=" col-xs-3 col-sm-1">
+        <img src="{{camera.imgThumb}}">
+    </div>
+    <div class="col-xs-6 col-sm-9 ">
+        <a ui-sref="store"><span class="glyphicon glyphicon-chevron-left"></span>{{camera.type}} Cameras</a>
+        <h4>{{camera.name}}</h4>
+    </div>
+    <div class="col-xs-3 col-sm-2">
+        <a href="{{camera.linkDetail}}" class="btn btn-default ">More Information</a>
+    </div>
+</div>
+<div class="detailCover text-center">
+    <img src="{{camera.imgTitle}}">
+    <p>START YOUR PHOTOGRAPHIC JOURNEY WITH <br> {{camera.name|uppercase}}</p>
+</div>
+
+<div class="detailGallary text-center">
+    <p>Gallary</p>
+    <div class="thumbnail">
+        <img src="{{imgPreview}}">
+        <div>
+            <div ng-repeat="imageUrl in camera.images" class="col-xs-6 col-sm-3">
+                <a href="" class="thumbnail">
+                    <img ng-src="{{imageUrl}}" ng-click="setPreview(imageUrl);">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

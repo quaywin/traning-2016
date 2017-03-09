@@ -1,0 +1,16 @@
+{
+    "name": "Canon EOS 80D",
+    "type": "DSLR",
+    "imgTitle": "market/components/cameras/img/CanonEOS80D/CanonEOS80D.jpg",
+    "imgThumb": "market/components/cameras/img/CanonEOS80D/eos_80d-mini.png",
+    "linkDetail": "http://www.canon-europe.com/for_home/product_finder/cameras/digital_slr/eos-80d/#feature",
+    "images": [
+        "market/components/cameras/img/CanonEOS80D/33627_pr42.jpg",
+        "market/components/cameras/img/CanonEOS80D/33628_pr42.jpg",
+        "market/components/cameras/img/CanonEOS80D/33629_pr42.jpg",
+        "market/components/cameras/img/CanonEOS80D/33633_pr42.jpg",
+        "market/components/cameras/img/CanonEOS80D/33635_pr42.jpg",
+        "market/components/cameras/img/CanonEOS80D/52238_pr42.jpg",
+        "market/components/cameras/img/CanonEOS80D/52240_pr42.jpg"
+    ]
+}

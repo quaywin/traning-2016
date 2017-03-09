@@ -1,0 +1,186 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url('../font/Melancholight Italic.ttf');
+}
+
+.parallax {
+    width: 100%;
+    height: 100%;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*opacity: 0.8;*/
+}
+
+
+/*HOME PAGE*/
+
+.homePage {
+    position: relative;
+    height: 100%;
+    background: rgba(5, 54, 249, 1);
+    color: white;
+    text-shadow: 3px 3px 10px black;
+}
+
+.backgroundImg {
+    position: absolute;
+    background-image: url('../img/clem-onojeghuo-192729.jpg');
+    opacity: 0.5;
+}
+
+.homePage .footer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.footer>h1 {
+    margin-top: 13%;
+    font-size: 150px;
+    font-family: logoFont;
+}
+
+.footer>a {
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.footer>a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: grey;
+}
+
+.footer>a>.glyphicon {
+    font-size: 20px;
+}
+
+
+/*MAIN PAGE*/
+
+.navbar {
+    box-shadow: 0 1px 5px #888888;
+    margin: 0!important;
+}
+
+.navbar-brand {
+    /*padding-right: 35px!important;*/
+    margin-left: 20px!important;
+    font-family: logoFont;
+    font-size: 45px!important;
+    padding-top: 13px!important;
+    color: #355C7D!important;
+    text-shadow: 2px 2px 3px #ddd;
+}
+
+.navbar-right {
+    margin-right: 0!important;
+}
+
+.mainRow {
+    column-width: auto !important;
+    column-count: 2;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        column-count: 1;
+    }
+}
+
+.camera-item .thumbnail {
+    box-shadow: 3px 3px 8px #888888;
+    padding: 0!important;
+    border: 0!important;
+}
+
+.caption {
+    border: 1px solid #ddd;
+}
+
+.camera-item {
+    display: inline-block;
+}
+
+
+/*DETAIL*/
+
+.detailHeader {
+    width: 100%;
+    display: table;
+    background-color: #f5f6f6;
+}
+
+.detailHeader>div {
+    margin-top: 13px;
+}
+
+.detailHeader div a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #5f5f5f;
+    font-weight: bold;
+}
+
+.detailHeader img {
+    width: 100%;
+}
+
+.detailHeader .btn-default {
+    white-space: normal;
+}
+
+.detailCover {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.detailCover img {
+    width: 100%;
+    /*position: absolute;*/
+}
+
+.detailCover p {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    font-size: 3vw;
+    color: whitesmoke;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px black;
+}
+
+.detailGallary {
+    width: 100%;
+    background-color: #f5f6f6;
+}
+
+.detailGallary p {
+    color: maroon;
+    font-size: xx-large;
+    margin: 0!important;
+    padding: 5px 0;
+}
+
+.detailGallary>.thumbnail {
+    background-color: #222222!important;
+    padding-top: 10px;
+}
+
+.detailGallary>.thumbnail>div {
+    display: table;
+    padding-top: 20px;
+}

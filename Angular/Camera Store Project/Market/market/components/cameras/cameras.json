@@ -1,0 +1,36 @@
+[{
+    "type": "DSLR",
+    "id": "CanonEOS80D",
+    "name": "Canon EOS 80D",
+    "imgUrl": "market/components/cameras/img/CanonEOS80D/CanonEOS80D.jpg"
+}, {
+    "type": "Compact",
+    "id": "PowerShotG5X",
+    "name": "PowerShot G5 X",
+    "imgUrl": "market/components/cameras/img/PowerShotG5X/PowerShotG5X.jpg"
+}, {
+    "type": "DSLR",
+    "id": "CanonEOS1300D",
+    "name": "Canon EOS 1300D",
+    "imgUrl": "market/components/cameras/img/CanonEOS1300D/CanonEOS1300D.jpg"
+}, {
+    "type": "DSLR",
+    "id": "CanonEOS750D",
+    "name": "Canon EOS 750D",
+    "imgUrl": "market/components/cameras/img/CanonEOS750D/CanonEOS750D.jpg"
+}, {
+    "type": "DSLR",
+    "id": "CanonEOS1DXMarkII",
+    "name": "Canon EOS 1DX Mark II",
+    "imgUrl": "market/components/cameras/img/CanonEOS1DXMarkII/CanonEOS1DXMarkII.png"
+}, {
+    "type": "Compact",
+    "id": "PowerShotG3X",
+    "name": "PowerShot G3 X",
+    "imgUrl": "market/components/cameras/img/PowerShotG3X/PowerShotG3X.jpg"
+}, {
+    "type": "Mirrorless",
+    "id": "CanonEOSM10",
+    "name": "Canon EOS M10",
+    "imgUrl": "market/components/cameras/img/CanonEOSM10/CanonEOSM10.jpg"
+}]

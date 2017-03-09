@@ -1,0 +1,17 @@
+{
+    "name": "PowerShot G3 X",
+    "type": "Compact",
+    "imgTitle": "market/components/cameras/img/PowerShotG3X/PowerShotG3X.jpg",
+    "imgThumb": "market/components/cameras/img/PowerShotG3X/powershot-g3-x--mini.png",
+    "linkDetail": "http://www.canon-europe.com/for_home/product_finder/cameras/digital_camera/powershot/powershot_g3_x/",
+    "images": [
+        "market/components/cameras/img/PowerShotG3X/Gallery-sml_01orig.jpg",
+        "market/components/cameras/img/PowerShotG3X/Gallery-sml_02orig.jpg",
+        "market/components/cameras/img/PowerShotG3X/Gallery-sml_03orig.jpg",
+        "market/components/cameras/img/PowerShotG3X/Gallery-sml_04orig.jpg",
+        "market/components/cameras/img/PowerShotG3X/Gallery-sml_05orig.jpg",
+        "market/components/cameras/img/PowerShotG3X/Gallery-sml_08orig.jpg",
+        "market/components/cameras/img/PowerShotG3X/Gallery-lrg_01orig.jpg",
+        "market/components/cameras/img/PowerShotG3X/Gallery-lrg_03orig.jpg"
+    ]
+}
