@@ -1,0 +1,88 @@
+<div class="modal-body" ng-controller="RegisterController">
+    <h2>{{name}}</h2>
+    <form id="register-form" ng-keydown="$event.which===13 && submitForm(form.$valid)" class="form-horizontal" name="form" novalidate>
+        <div class="form-group">
+            <label for="email" class="col-xs-3 control-label required">Email</label>
+
+            <div class="col-xs-9">
+                <input ng-model="email" name="email" type="email" class="form-control" placeholder="Email" ng-model="email" autocomplete="off" required>
+                <i class="fa fa-check text-success" ng-show="form.email.$dirty && form.email.$valid"></i>
+
+                <!--Dấu check thể hiện việc nhập dữ liệu được nhập là hợp lệ-->
+
+                <div ng-show="form.email.$dirty && form.email.$invalid" class="text-danger">
+                    <i class="fa fa-times text-danger"></i>
+
+                    <!--Nếu dữ liệu không hợp lệ-->
+                    <span ng-show="form.email.$error.required">Bạn chưa nhập địa chỉ email</span>
+
+                    <!--Custom thông báo email không được rỗng-->
+                    <span ng-show="form.email.$error.email">Không đúng định dạng email</span>
+
+                    <!--Thông báo email sai định dạng-->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password" class="col-xs-3 control-label required">Mật khẩu
+            </label>
+
+            <div class="col-xs-9">
+                <input ng-model="password" name="password" ng-model="password" type="password" class="form-control" placeholder="Mật khẩu" ng-minlength="6" ng-maxlength="30" required>
+                <i class="fa fa-check text-success" ng-show="form.password.$dirty && form.password.$valid"></i>
+
+                <div ng-show="form.password.$dirty && form.password.$invalid" class="text-danger">
+                    <i class="fa fa-times text-danger"></i>
+                    <span ng-show="form.password.$error.required">
+                        Mật khẩu không được bỏ trống
+                    </span>
+                    <span ng-show="form.password.$error.minlength">
+                        Mật khẩu phải dài hơn 6 kí tự
+                    </span>
+                    <span ng-show="form.password.$error.maxlength">
+                        Mật khẩu phải ngắn hơn 30 kí tự
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="username" class="col-xs-3 control-label required">Tên đăng nhập
+            </label>
+            <div class="col-xs-9">
+                <input ng-model="username" name="username" type="text" class="form-control" placeholder="Tên đăng nhập" ng-model="username" ng-minlength="6" ng-maxlength="50" ng-pattern="/^[a-zA-Z]+$/" required>
+                <i class="fa fa-check text-success" ng-show="form.username.$dirty && form.username.$valid"></i>
+
+                <div ng-show="form.username.$dirty && form.username.$invalid" class="text-danger">
+                    <i class="fa fa-times text-danger"></i>
+                    <span ng-show="form.username.$error.required">
+                        Họ tên không được bỏ trống
+                    </span>
+                    <span ng-show="form.username.$error.minlength">
+                        Họ tên phải dài hơn 6 kí tự
+                    </span>
+                    <span ng-show="form.username.$error.maxlength">
+                        Họ tên phải ngắn hơn 50 kí tự
+                    </span>
+                    <span ng-show="form.username.$error.pattern">
+                        Họ tên chỉ bao gồm các kí tự chữ cái
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group">
+
+            <div class="col-sm-offset-3 col-xs-9">
+                <button type="submit" class="btn btn-primary" ng-click="submitForm(form.$valid);showLogin()">Đăng ký
+                    <i class="fa fa-sign-in"></i>
+                </button>
+            </div>
+
+        </div>
+    </form>
+</div>
+</div>

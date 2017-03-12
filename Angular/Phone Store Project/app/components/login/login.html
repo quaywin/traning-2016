@@ -1,0 +1,28 @@
+<div class="modal-body" ng-controller="LoginController">
+    <form class="form-horizontal " ng-keydown="$event.which===13 && submitForm(formLogin.$valid) " name="formLogin " novalidate>
+        <div class="form-group ">
+            <label class="control-label col-sm-2 " for="email ">Username:</label>
+            <div class="col-sm-8 " ng-class="{ 'has-error': formLogin.username.$invalid && formLogin.username.$dirty} ">
+                <input ng-model="username " name="username " type="text " class="form-control " id="user " placeholder="Enter username " required/>
+                <p ng-show="formLogin.username.$invalid && formLogin.username.$dirty " class="help-block "> Username requried</p>
+            </div>
+        </div>
+        <div class="form-group ">
+            <label class="control-label col-sm-2 ">Password:</label>
+            <div class="col-sm-8 " ng-class="{ 'has-error': formLogin.password.$invalid && formLogin.password.$dirty} ">
+                <input ng-model="password " type="password " name="password " class="form-control " placeholder="Enter password " required/>
+                <p ng-show="formLogin.password.$invalid && formLogin.password.$dirty " class="help-block ">Password required</p>
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="col-sm-6">
+                <a href="#" ng-click="goRegister();showRegister()">Bạn chưa có tài khoản</a>
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="col-sm-offset-2 col-sm-6 ">
+                <input type="button " ng-click="submitForm(formLogin.$valid)" class="btn btn-primary " value="Login " ng-click="close()" />
+            </div>
+        </div>
+    </form>
+</div>

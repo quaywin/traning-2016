@@ -1,0 +1,54 @@
+<div class="card1">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img ng-src="{{vm.products[0].image}}" /></div>
+						  <div class="tab-pane" id="pic-2"><img ng-src="{{vm.products[0].image}}" /></div>
+						  <div class="tab-pane" id="pic-3"><img ng-src="{{vm.products[0].image}}" /></div>
+						  <div class="tab-pane" id="pic-4"><img ng-src="{{vm.products[0].image}}" /></div>
+						  <div class="tab-pane" id="pic-5"><img ng-src="{{vm.products[0].image}}" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img ng-src="{{vm.products[0].image}}" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img ng-src="{{vm.products[0].image}}" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img ng-src="{{vm.products[0].image}}" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img ng-src="{{vm.products[0].image}}" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img ng-src="{{vm.products[0].image}}" /></a></li>
+						</ul>
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{vm.products[0].name}}</h3>
+						<p style="font-size:20px;font-weight:bold">{{vm.products[0].manufacturer|uppercase}}</p>
+
+						<p style="font-size:15px">Đây là trang web bán điện thoại di động của Đặng Nhật Huy-Trần Lê Anh Thể.<br>Chuyên bán các loại điện thoại từ iphone cho đến nokia cục gạch,với tiêu chí bán rẻ như cho,hy vọng nhận được sự hưởng ứng của khách hàng</p>
+						<h4 class="price">current price: <span>{{vm.products[0].price | currency:"":0}} VND</span></h4>
+            <strong class="name " style="color:blue ">{{product.name}}</strong><br>
+
+            <hr>
+            <div class="test" style="font-size:20px">
+
+
+            <span>SCREEN:{{vm.products[0].screen}}</span><br>
+            <br>
+            <span>OS:{{vm.products[0].os}}</span>
+            <!-- <br><br> -->
+            <span>CPU:{{vm.products[0].cpu|uppercase}}</span>
+            <span>RAM:{{vm.products[0].ram}} , ROM:{{vm.products[0].rom}}</span>
+            <!-- <br><br> -->
+            <span>Camera : {{vm.products[0].camera}}, Selfie : {{vm.products[0].selfie}}</span>
+            <br><br>
+            <span>PIN : {{vm.products[0].pin}}, SIM : {{vm.products[0].sim}}</span>
+            <!-- <br><br><br> -->
+						<div class="action">
+							<button style="font-size:30px" type="submit" class="btn btn-primary" ng-click="showLogin()">Mua hang<span class="glyphicon glyphicon-shopping-cart"></span></button>
+							<button style="font-size:30px" class="btn btn-primary" type="button">Thả tim<span class="glyphicon glyphicon-heart"></span></button>
+						</div>
+              </div>
+					</div>
+				</div>
+			</div>
+			<div class="heart">
+				<h2>heart</h2>
+			</div>
+		</div>

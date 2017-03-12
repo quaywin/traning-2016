@@ -1,0 +1,36 @@
+
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <div class="card">
+                <div class="front">
+                    <img ng-src="{{product.image}}" alt=" ">
+                    <div class="ratings ">
+                        <p class="pull-right ">15 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                            <span class="glyphicon glyphicon-star "></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="back ">
+                    <strong class="name " style="color:blue ">{{product.name}}</strong><br>
+                    <strong>{{product.price | currency:"":0}} VND</strong>
+
+                    <hr>
+                    <span>{{product.screen}}</span><br>
+                    <span>{{product.os}}</span>
+                    <br>
+                    <span>{{product.cpu|uppercase}}</span>
+                    <span>{{product.ram}} , {{product.rom}}</span>
+                    <br>
+                    <span>Camera : {{product.camera}}, Selfie : {{product.selfie}}</span>
+                    <span>PIN : {{product.pin}}, SIM : {{product.sim}}</span>
+                    <br>
+                    <a ui-sref="detailProduct({name:product.name})">Xem chi tiết và mua hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>

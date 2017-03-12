@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shop Homepage - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assest/css/bootstrap.min.css " rel="stylesheet ">
+
+    <!-- Custom CSS -->
+    <link href="assest/css/shop-homepage.css" rel="stylesheet">
+    <link href="assest/css/detail.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="assest/js/jquery.js "></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assest/js/bootstrap.min.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+    <script data-require="ui-bootstrap@*" data-semver="0.12.1" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.min.js"></script>
+    <script src="app.js"></script>
+
+    <script src="components/product/product.module.js"></script>
+    <script src="components/product/products.controller.js"></script>
+    <script src="components/product/product.route.js"></script>
+    <script src="shared/service/module.service.js"></script>
+    <script src="shared/service/UserService.js"></script>
+    <script src="components/product/product.service.js"></script>
+    <script src="components/product/productManuController.controller.js"></script>
+    <script src="components/product/detailProduct.controller.js"></script>
+    <script src="shared/directive/product.directive.js"></script>
+    <script src="components/login/login.module.js"></script>
+    <script src="components/login/login.controller.js"></script>
+    <script src="components/register/register.module.js"></script>
+    <script src="components/register/register.controller.js"></script>
+</head>
+
+<body ng-controller="ProductController">
+<div ng-include="'assest/blockPage/header.html'"></div>
+<div ng-include="'assest/blockPage/content.html'"></div>
+<div ng-include="'assest/blockPage/footer.html'"></div>
+
+</body>
+
+</html>
