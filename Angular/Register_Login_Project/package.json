@@ -1,0 +1,18 @@
+{
+  "name": "angular_project",
+  "version": "1.0.0",
+  "description": "dsadsad",
+  "main": "app.js",
+  "private": true,
+  "dependencies": {
+    "bower": "^1.8.0",
+    "http-server": "^0.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server ./ -a localhost -p 8000 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
