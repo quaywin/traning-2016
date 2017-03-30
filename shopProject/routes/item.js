@@ -8,6 +8,7 @@ module.exports = function() {
 
     function createItem(req, res) {
         var item = {
+            _id: req.body._id,
             name: req.body.name,
             price: req.body.price,
             image: req.body.image,
@@ -24,7 +25,8 @@ module.exports = function() {
 
     function updateItem(req, res) {
         var item = {
-            name: req.params.name,
+            _id: req.params.id,
+            name: req.body.name,
             price: req.body.price,
             image: req.body.image,
             provider: req.body.provider,
@@ -38,6 +40,13 @@ module.exports = function() {
         })
     }
 
+    function deleteItem(req, res) {
+        itemDao.deleteItem(req.params.id, function(err, mess) {
+            if (err) res.send(err);
+            else
+                res.send(mess);
+        })
+    }
 
     return router;
 }
