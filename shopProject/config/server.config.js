@@ -1,3 +1,4 @@
 module.exports = {
-    PORT: 8000
+    BASE_URL    : "/api",
+    PORT        : 3000,
 }
