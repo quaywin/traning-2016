@@ -28,14 +28,15 @@ function createItem(itemReq, callback) {
 }
 
 function deleteItem(itemID, callback) {
-    Item.remove( {_id: itemID}, function(err, reponse){
+    Item.remove({ _id: itemID }, function(err, reponse) {
         if (err) callback(err);
         else {
-            callback(null,{
+            callback(null, {
                 "Message": "Deleted"
             });
         }
     });
+}
 
 function updateItem(itemReq, callback) {
     Item.findOne({ _id: itemReq._id }, function(err, item) {
@@ -52,7 +53,7 @@ function updateItem(itemReq, callback) {
                 else
                     callback(null, {
                         "mess": "update successfully"
-                    })
+                    });
             })
         }
     })

@@ -1,5 +1,5 @@
-var mongoose = require('./../config/db.config')
-var jwt = require('jsonwebtoken')
+var mongoose = require('mongoose');
+var jwt = require('jsonwebtoken');
 var Schema = mongoose.Schema;
 // var crypto=require('crypto');
 var bcrypt = require('bcrypt');
