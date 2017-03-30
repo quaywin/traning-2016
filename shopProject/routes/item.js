@@ -20,7 +20,22 @@ module.exports = function() {
             else
                 res.send(mess);
         })
+    }
 
+    function updateItem(req, res) {
+        var item = {
+            name: req.params.name,
+            price: req.body.price,
+            image: req.body.image,
+            provider: req.body.provider,
+            amount: req.body.amount,
+            category: req.body.category
+        }
+        itemDao.updateItem(item, function(err, mess) {
+            if (err) res.send(err);
+            else
+                res.send(mess);
+        })
     }
 
 
