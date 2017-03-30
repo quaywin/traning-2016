@@ -8,5 +8,7 @@ var serverConfig = require('./config/server.config');
 
 app.use(bodyParser.json());
 
+app.use('/', require('./routes/item')());
+
 app.listen(serverConfig.PORT);
 console.log("Server connecting port " + serverConfig.PORT);

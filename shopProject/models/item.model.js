@@ -27,4 +27,4 @@ var itemSchema = schema({
 
 var item = new mongoose.model('item', itemSchema);
 
-modules.exports = item;
+module.exports = item;
