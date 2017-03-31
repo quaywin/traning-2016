@@ -6,7 +6,7 @@ module.exports = function() {
     router.put('/item/:id', updateItem);
     router.delete('/item/:id', deleteItem);
 
-    function createItem(req, res) {
+    function createItem(req, res, next) {
         var item = {
             _id: req.body._id,
             name: req.body.name,
@@ -17,13 +17,13 @@ module.exports = function() {
             category: req.body.category
         }
         itemDao.createItem(item, function(err, mess) {
-            if (err) res.send(err);
+            if (err) next(err);
             else
                 res.send(mess);
         })
     }
 
-    function updateItem(req, res) {
+    function updateItem(req, res, next) {
         var item = {
             _id: req.params.id,
             name: req.body.name,
@@ -34,15 +34,15 @@ module.exports = function() {
             category: req.body.category
         }
         itemDao.updateItem(item, function(err, mess) {
-            if (err) res.send(err);
+            if (err) next(err);
             else
                 res.send(mess);
         })
     }
 
-    function deleteItem(req, res) {
+    function deleteItem(req, res, next) {
         itemDao.deleteItem(req.params.id, function(err, mess) {
-            if (err) res.send(err);
+            if (err) next(err);
             else
                 res.send(mess);
         })

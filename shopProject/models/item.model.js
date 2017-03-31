@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var schema = mongoose.Schema;
 
-var itemSchema = schema({
+var itemSchema = new schema({
     _id: {
         required: true,
         type: String
@@ -29,6 +29,6 @@ var itemSchema = schema({
     }
 });
 
-var item = new mongoose.model('item', itemSchema);
+var item = mongoose.model('item', itemSchema);
 
 module.exports = item;
