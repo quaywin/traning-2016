@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //Router
-app.use(serverConfig.BASE_URL + '/user', require('./routes/user')());
-app.use('/', require('./routes/item')());
+// app.use(serverConfig.BASE_URL + '/user', require('./routes/user')());
+app.use('/item', require('./routes/item')());
 
 app.use(errorHandler.errorHandler());
 

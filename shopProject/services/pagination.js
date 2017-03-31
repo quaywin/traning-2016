@@ -3,7 +3,7 @@ var pagination = function(data, count, pageIndex, pageSize){
 
     res.currentPage = parseInt(pageIndex);
     res.pageSize = parseInt(pageSize);
-    res.totalPage = (count % pageSize == 0)?(count/pageSize):(count/pageSize + 1);
+    res.totalPage = (count % pageSize == 0)?(count/pageSize):((count - count%pageSize)/pageSize + 1);
     res.totalResult = count;
     res.items = [];
 
