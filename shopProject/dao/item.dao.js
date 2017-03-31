@@ -56,5 +56,4 @@ function updateItem(itemReq, callback) {
             })
         }
     })
-
 }
