@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //Router
 // app.use(serverConfig.BASE_URL + '/user', require('./routes/user')());
 app.use('/item', require('./routes/item')());
+app.use(serverConfig.BASE_URL + '/user', require('./routes/user')());
 
 app.use(errorHandler.errorHandler());
 
