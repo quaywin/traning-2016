@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var schema = mongoose.Schema;
 
 var detailSchema = new schema({
-    detail_id: String,
+    _id: String,
     idOfOrder: String,
     manufacturer: String,
     product_id: String,
