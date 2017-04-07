@@ -51,12 +51,11 @@ module.exports = function() {
 
     function searchItem(req, res, next) {
         req.body["pageSize"] = 10;
-        itemDao.searchItem(req.body, function(err, mess){
-            if (err){
+        itemDao.searchItem(req.body, function(err, mess) {
+            if (err) {
                 console.log(err);
                 next(err);
-            }
-            else res.send(mess);
+            } else res.send(mess);
         });
     }
 

@@ -1,15 +1,14 @@
 var mongoose = require('mongoose');
 var schema = mongoose.Schema;
 
-var detailSchema = new schema({
-    _id: String,
-    idOfOrder: String,
+var detail_OrderSchema = new schema({
+    detail_id: String,
+    order_id: String,
     manufacturer: String,
     product_id: String,
     price: Number,
     number: Number
-});
+})
+var detail_Order = mongoose.model('Order_Detail', detail_OrderSchema);
 
-var Detail = mongoose.model('detail', detailSchema);
-
-module.exports = Detail
+module.exports = detail_Order;

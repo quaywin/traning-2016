@@ -16,13 +16,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(serverConfig.BASE_URL + '/user', require('./routes/user')());
 app.use('/item', require('./routes/item')());
 app.use(serverConfig.BASE_URL + '/user', require('./routes/user')());
-<<<<<<< HEAD
+
 app.use('/', require('./routes/item')());
 app.use('/', require('./routes/order')());
-app.use('/', require('./routes/detail')());
-=======
+app.use('/', require('./routes/detail_order')());
 
->>>>>>> 7aa87e8e834c18529ea88bb7003af6a318ec63f0
 app.use(errorHandler.errorHandler());
 
 app.listen(serverConfig.PORT);
