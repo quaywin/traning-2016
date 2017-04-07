@@ -2,9 +2,10 @@ var router = require('express').Router();
 var itemDao = require('../dao/item.dao');
 
 module.exports = function() {
-    router.post('/item', createItem);
-    router.put('/item/:id', updateItem);
-    router.delete('/item/:id', deleteItem);
+    router.post('/', createItem);
+    router.put('/:id', updateItem);
+    router.delete('/:id', deleteItem);
+    router.post('/search', searchItem);
 
     function createItem(req, res, next) {
         var item = {
@@ -46,6 +47,17 @@ module.exports = function() {
             else
                 res.send(mess);
         })
+    }
+
+    function searchItem(req, res, next) {
+        req.body["pageSize"] = 10;
+        itemDao.searchItem(req.body, function(err, mess){
+            if (err){
+                console.log(err);
+                next(err);
+            }
+            else res.send(mess);
+        });
     }
 
     return router;

@@ -5,16 +5,15 @@ module.exports = function() {
 
     router.post('/login', login);
     router.post('/signup', signup);
-    router.delete('/:username',authentication.authentication, deleteUser);
-    router.put('/:username',authentication.authentication, updateUser);
+    router.delete('/:email', authentication.authentication, deleteUser);
+    router.put('/:email', authentication.authentication, updateUser);
 
 
     function signup(req, res, next) {
-        console.log(req);
         var request = {
-            user: req.body.username,
-            pass: req.body.password,
-            name: req.body.fullname
+            email: req.body.email,
+            password: req.body.password,
+            username: req.body.username
         }
         userDao.signup(request, function(err, respone) {
             if (err) {
@@ -29,8 +28,8 @@ module.exports = function() {
     function login(req, res, next) {
         // console.log(req.body);
         var request = {
-                user: req.body.username,
-                pass: req.body.password
+                email: req.body.email,
+                password: req.body.password
             }
             // console.log(req.body.username);
 
@@ -44,9 +43,9 @@ module.exports = function() {
     }
 
     function deleteUser(req, res, next) {
-        var username = req.params.username;
-        // console.log(username);
-        userDao.deleteUser(username, function(err, response) {
+        var email = req.params.email;
+        console.log(email);
+        userDao.deleteUser(email, function(err, response) {
             if (err) {
                 next(err)
             } else {
@@ -57,7 +56,7 @@ module.exports = function() {
 
     function updateUser(req, res, next) {
         var request = {
-            user: req.params.username,
+            email: req.params.email,
             data: {
                 passUp: req.body.passUp,
                 nameUp: req.body.nameUp
